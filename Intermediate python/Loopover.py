@@ -35,6 +35,60 @@ import pandas as pd
 brics = pd.read_csv("brics.csv", index_col = 0)
 for lab, row in brics.iterrows():
           print(lab +": " + row["capital"])
+
+#add column
+import pandas as pd
+brics = pd.read_csv("brics.csv", index_col = 0)
+for lab, row in brics.iterrows() :
+          brics.loc[lab, "name_length"] = len(row["country"])
+print(brics)
+
+#apply
+import pandas as pd
+brics = pd.read_csv("brics.csv", index_col = 0)
+brics["name_length"] = brics["country"].apply(len)
+print(brics)
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Adapt for loop
+for lab, row in cars.iterrows() :
+    print(lab)
+    print(row)
           
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+print(cars)
+
+# Adapt for loop
+for lab, row in cars.iterrows() :
+     cars.loc[lab, "COUNTRY"] = len(row["country"])
+
+# Adapt for loop
+for lab, row in cars.iterrows() :
+     cars.loc[lab, "COUNTRY"] = row["country"].upper()
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+print(cars)
+          
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Use .apply(str.upper)
+for lab, row in cars.iterrows() :
+    cars["COUNTRY"] = cars["country"].apply(str.upper)
+
+print(cars)
           
       
