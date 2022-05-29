@@ -68,10 +68,6 @@ data = {'capital': 'rome','population' :59.83 }
 
 # Add data to europe under key 'italy'
 europe['italy'] = data
-
-# Print europe
-print(europe)
-
 # Pre-defined lists
 names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
 dr =  [True, False, False, False, True, True, True]
@@ -83,8 +79,8 @@ import pandas as pd
 # Create dictionary my_dict with three key:value pairs: my_dict
 my_dict = {
     'country':names,
-    'drivers_right': dr,
-    'cars_per_cap': cpc
+    'drives_right':dr,
+    'cars_per_cap':cpc
 }
 
 # Build a DataFrame cars from my_dict: cars
