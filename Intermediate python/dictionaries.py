@@ -107,3 +107,13 @@ cars.index = row_labels
 
 # Print cars again
 print(cars)
+
+# Import pandas as pd
+import pandas as pd
+
+# Fix import by including index_col
+cars = pd.read_csv('cars.csv',index_col = 0)
+#set it to 0 means the first column is used as row labels 
+
+# Print out cars
+print(cars)
